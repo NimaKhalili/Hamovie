@@ -1,6 +1,8 @@
 package com.example.hamovie;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
 
@@ -9,6 +11,10 @@ import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
     private AppDatabase database;
+    private RecyclerView filmRecyclerView;
+    private RecyclerView serialRecyclerView;
+    private RecyclerView animationRecyclerView;
+    private MainAdapter adapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -16,7 +22,41 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         prepareDatabase();
         insertSampleData();
+        filmRecyclerView = findViewById(R.id.recyclerView_main_film);
+        serialRecyclerView = findViewById(R.id.recyclerView_main_serial);
+        animationRecyclerView = findViewById(R.id.recyclerView_main_animation);
+        prepareAllRecyclerViews();
     }
+
+    private void prepareAllRecyclerViews() {
+        AppExecutors.getsInstance().diskIO().execute(() ->{
+            prepareFilmRecyclerView();
+            prepareSerialRecyclerView();
+            prepareAnimationRecyclerView();
+        });
+    }
+
+    private void prepareSerialRecyclerView() {
+        List<MovieEntry> movieList = database.movieDao().getSerials();
+        adapter = new MainAdapter(movieList);
+        serialRecyclerView.setLayoutManager(new LinearLayoutManager(this,LinearLayoutManager.HORIZONTAL, false));
+        serialRecyclerView.setAdapter(adapter);
+    }
+
+    private void prepareAnimationRecyclerView() {
+        List<MovieEntry> movieList = database.movieDao().getAnimations();
+        adapter = new MainAdapter(movieList);
+        animationRecyclerView.setLayoutManager(new LinearLayoutManager(this,LinearLayoutManager.HORIZONTAL, false));
+        animationRecyclerView.setAdapter(adapter);
+    }
+
+    private void prepareFilmRecyclerView() {
+        List<MovieEntry> movieList = database.movieDao().getFilms();
+        adapter = new MainAdapter(movieList);
+        filmRecyclerView.setLayoutManager(new LinearLayoutManager(this,LinearLayoutManager.HORIZONTAL, false));
+        filmRecyclerView.setAdapter(adapter);
+    }
+
     private void insertSampleData() {
 
         AppExecutors.getsInstance().diskIO().execute(() -> {
@@ -42,10 +82,9 @@ public class MainActivity extends AppCompatActivity {
         movieList.add(new MovieEntry("پنگوئن های آقای پاپر","comedy", 2011, "خلاصه داستان : «تام پاپرز» در طول عمرش رابطه اندکی با پدرش که یک جهانگرد بوده داشته است. خودش هم وقت کمی را با بچه هایش می گذراند و اکثر اوقات مشغول کارش است. یک روز پدر او برای هدیه ای غیر منتظره می فرستد: شش پنگوئن. پاپرز که از هدف پدرش از فرستادن این پنگوئن ها سر در نمی آورد، تصمیم میگیرد از شر آن ها خلاص شود. اما...", R.drawable.comedy5));
 
         movieList.add(new MovieEntry("ربوده شده","crime", 2008, "خلاصه داستان : فیلم ربوده شده 1 داستان درباره دختر 17 ساله یکی از مامورین سابق CIA، در سفری که به پاریس داشته، توسط عده ای دزدیده می شود و حال او با تکیه بر استعداد ها و مهارت هایی که دارد در اروپا به دنبال دخترش می گردد.", R.drawable.crime1));
-        movieList.add(new MovieEntry("سوداگران درد","crime", 2023, "خلاصه داستان : فیلم سوداگران درد 2023 براساس داستانی واقعی روایت شده و در مورد مادری تنها به نام لیزا (با بازی امیلی بلانت) است که وقتی شغل خود را از دست می دهد برای تامین مخارج دخترش، درگیر یک طرح پرسود اما خطرناک فروش دارو می شود و…", R.drawable.crime1));
-        movieList.add(new MovieEntry("بلیتز","crime", 2011, "خلاصه داستان : افسر پلیس برانت، سعی دارد تا یک قاتل زنجیره ای که تعداد زیادی از ماموران پلیس را به قتل رسانده پیدا کند.", R.drawable.crime1));
-        movieList.add(new MovieEntry("بازی مالی","crime", 2017, "خلاصه داستان : فیلم بازی مالی 2017 بر اساس داستان واقعی مالی بلوم است که گرداننده بازی پوکر پرریسکی ویژه سلبریتی ها و اعضای مافیا بود و درنهایت به دام اف بی آی افتاد. فیلمنامه این فیلم نامزد جایزه بهترین فیلمنامه اقتباسی از آکادمی اسکار، جوایز بفتا و گلدن گلوبز 2017 شد.", R.drawable.crime1));
-        movieList.add(new MovieEntry("رکن پنجم","crime", 2013, "خلاصه داستان : فیلم رکن پنجم 2013 براساس داستانی واقعی روایت شده و در مورد دو موسس وبسایت ویکی لیکس است که با همکاری یکدیگر به ارسال و افشای اسناد محرمانه از سوی منابع ناشناس می پردازند. اما زمانی که به اسنادی محرمانه مربوط به سازمان اطلاعاتی آمریکا دسترسی پیدا می کنند، با مشکلاتی جدی روبرو شده و…", R.drawable.crime1));
+        movieList.add(new MovieEntry("سوداگران درد","crime", 2023, "خلاصه داستان : فیلم سوداگران درد 2023 براساس داستانی واقعی روایت شده و در مورد مادری تنها به نام لیزا (با بازی امیلی بلانت) است که وقتی شغل خود را از دست می دهد برای تامین مخارج دخترش، درگیر یک طرح پرسود اما خطرناک فروش دارو می شود و…", R.drawable.crime2));
+        movieList.add(new MovieEntry("بلیتز","crime", 2011, "خلاصه داستان : افسر پلیس برانت، سعی دارد تا یک قاتل زنجیره ای که تعداد زیادی از ماموران پلیس را به قتل رسانده پیدا کند.", R.drawable.crime3));
+        movieList.add(new MovieEntry("بازی مالی","crime", 2017, "خلاصه داستان : فیلم بازی مالی 2017 بر اساس داستان واقعی مالی بلوم است که گرداننده بازی پوکر پرریسکی ویژه سلبریتی ها و اعضای مافیا بود و درنهایت به دام اف بی آی افتاد. فیلمنامه این فیلم نامزد جایزه بهترین فیلمنامه اقتباسی از آکادمی اسکار، جوایز بفتا و گلدن گلوبز 2017 شد.", R.drawable.crime4));
 
         movieList.add(new MovieEntry("کینه","horror", 2004, "خلاصه داستان : کینه شرح نفرینی است که به وجود آمدن آن به دو صورت اتفاق می افتد: هنگامی که فردی با خشم شدید یا با غصهٔ فراوان می میرد. کسانی که با این قدرت ماوراالطبیعهٔ کُشنده مواجه میشوند می میرند و خود به شکل همین نفرین دوباره متولد می شوند، از یک قربانی به قربانی دیگر و این زنجیرهٔ وحشت بی انتها ادامه می یابد.", R.drawable.horror1));
         movieList.add(new MovieEntry("راهبه","horror", 2018, "خلاصه داستان : فیلم راهبه 2018 کشیشی که گذشته تاریکی دارد، همراه با یک راهبه تازه کار، به کشور رومانی اعزام می شوند تا در مورد علت مرگ یک راهبه  جوان تحقیق کنند. در ادامه، آنها با نیروی اهریمنی مخوفی روبرو می شوند که...", R.drawable.horror2));

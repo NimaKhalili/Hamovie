@@ -11,6 +11,7 @@
         android:layout_width="100dp"
         android:layout_height="135dp"
         tools:background="@color/blue"
+        android:scaleType="fitXY"
         />
 
     <TextView
