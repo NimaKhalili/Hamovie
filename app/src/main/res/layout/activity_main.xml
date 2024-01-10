@@ -4,6 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+
     <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -12,30 +13,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
-
-            <FrameLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="46dp"
-                    android:layout_marginStart="16dp"
-                    android:layout_marginEnd="16dp"
-                    android:text="هامووی"
-                    android:gravity="center_vertical"
-                    android:paddingStart="16dp"
-                    style="@style/Widget.MaterialComponents.Button.TextButton"
-                    android:textSize="15sp" />
-
-                <ImageView
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
-                    android:layout_gravity="end|center_vertical"
-                    android:layout_marginStart="38dp"
-                    app:srcCompat="@drawable/ic_menu" />
-
-            </FrameLayout>
 
                 <TextView
                     android:layout_width="wrap_content"

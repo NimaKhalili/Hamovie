@@ -1,30 +1,39 @@
 package com.example.hamovie;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.PopupMenu;
+import androidx.core.view.GravityCompat;
+import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
+import android.view.View;
+import android.widget.ImageView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
     private AppDatabase database;
+    private MainAdapter adapter;
     private RecyclerView filmRecyclerView;
     private RecyclerView serialRecyclerView;
     private RecyclerView animationRecyclerView;
-    private MainAdapter adapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        prepareDatabase();
-        insertSampleData();
         filmRecyclerView = findViewById(R.id.recyclerView_main_film);
         serialRecyclerView = findViewById(R.id.recyclerView_main_serial);
         animationRecyclerView = findViewById(R.id.recyclerView_main_animation);
+        prepareDatabase();
+        insertSampleData();
         prepareAllRecyclerViews();
     }
 
@@ -127,5 +136,72 @@ public class MainActivity extends AppCompatActivity {
 
     private void prepareDatabase() {
         database = AppDatabase.getInstance(getApplicationContext());
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.main_menu, menu);
+        return super.onCreateOptionsMenu(menu);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        if (item.getItemId() == R.id.item_allFilms) {
+            Toast.makeText(this, item.toString(), Toast.LENGTH_SHORT).show();
+        }
+
+        if (item.getItemId() == R.id.item_sort) {
+            Toast.makeText(this, item.toString(), Toast.LENGTH_SHORT).show();
+        }
+
+        if (item.getItemId() == R.id.item_sort_group_year) {
+            Toast.makeText(this, item.toString(), Toast.LENGTH_SHORT).show();
+        }
+
+        if (item.getItemId() == R.id.item_sort_group_action) {
+            Toast.makeText(this, item.toString(), Toast.LENGTH_SHORT).show();
+        }
+
+        if (item.getItemId() == R.id.item_sort_group_comedy) {
+            Toast.makeText(this, item.toString(), Toast.LENGTH_SHORT).show();
+        }
+
+        if (item.getItemId() == R.id.item_sort_group_crime) {
+            Toast.makeText(this, item.toString(), Toast.LENGTH_SHORT).show();
+        }
+
+        if (item.getItemId() == R.id.item_sort_group_horror) {
+            Toast.makeText(this, item.toString(), Toast.LENGTH_SHORT).show();
+        }
+
+        if (item.getItemId() == R.id.item_sort_group_romance) {
+            Toast.makeText(this, item.toString(), Toast.LENGTH_SHORT).show();
+        }
+
+        if (item.getItemId() == R.id.item_sort_group_scifi) {
+            Toast.makeText(this, item.toString(), Toast.LENGTH_SHORT).show();
+        }
+
+        if (item.getItemId() == R.id.item_sort_group_war) {
+            Toast.makeText(this, item.toString(), Toast.LENGTH_SHORT).show();
+        }
+
+        if (item.getItemId() == R.id.item_sort_group_serial) {
+            Toast.makeText(this, item.toString(), Toast.LENGTH_SHORT).show();
+        }
+
+        if (item.getItemId() == R.id.item_sort_group_animation) {
+            Toast.makeText(this, item.toString(), Toast.LENGTH_SHORT).show();
+        }
+
+        if (item.getItemId() == R.id.item_about) {
+            Toast.makeText(this, item.toString(), Toast.LENGTH_SHORT).show();
+        }
+
+        if (item.getItemId() == R.id.item_user) {
+            Toast.makeText(this, item.toString(), Toast.LENGTH_SHORT).show();
+        }
+
+        return super.onOptionsItemSelected(item);
     }
 }
