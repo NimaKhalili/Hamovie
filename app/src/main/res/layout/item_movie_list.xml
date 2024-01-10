@@ -7,7 +7,7 @@
     android:orientation="horizontal">
 
     <ImageView
-        android:id="@+id/imageView_itemMovieList"
+        android:id="@+id/imageView_itemMovieList_poster"
         android:layout_width="100dp"
         android:layout_height="135dp"
         android:layout_marginStart="16dp"
@@ -35,6 +35,7 @@
             android:textSize="18sp" />
 
         <TextView
+            android:id="@+id/textView_itemMovieList_year"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="40dp"

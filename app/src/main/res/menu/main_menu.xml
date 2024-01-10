@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:id="@+id/item_allFilms" android:title="نمایش همه فیلم ها"/>
+    <item android:id="@+id/item_allMovies" android:title="نمایش همه فیلم ها"/>
     <item android:id="@+id/item_sort" android:title="نمایش به ترتیب">
         <menu >
             <group android:id="@+id/item_sort_group">

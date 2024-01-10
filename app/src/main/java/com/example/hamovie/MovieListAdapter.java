@@ -14,26 +14,27 @@ import com.squareup.picasso.Picasso;
 
 import java.util.List;
 
-public class MainAdapter extends RecyclerView.Adapter<MainAdapter.ViewHolder> {
+public class MovieListAdapter extends RecyclerView.Adapter<MovieListAdapter.ViewHolder> {
 
     private List<MovieEntry> movieList;
 
-    public MainAdapter(List<MovieEntry> movieList) {
+    public MovieListAdapter(List<MovieEntry> movieList) {
         this.movieList = movieList;
     }
 
     @NonNull
     @Override
-    public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+    public MovieListAdapter.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(parent.getContext())
-                .inflate(R.layout.item_main, parent, false);
-        return new ViewHolder(view);
+                .inflate(R.layout.item_movie_list, parent, false);
+        return new MovieListAdapter.ViewHolder(view);
     }
 
     @Override
-    public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
+    public void onBindViewHolder(@NonNull MovieListAdapter.ViewHolder holder, int position) {
         MovieEntry movie = movieList.get(position);
         holder.name.setText(movie.getName());
+        holder.year.setText(String.valueOf(movie.getYear()));
         Picasso.get().load(movie.getPoster()).into(holder.poster);
 
         holder.itemView.setOnClickListener(view -> {
@@ -50,8 +51,9 @@ public class MainAdapter extends RecyclerView.Adapter<MainAdapter.ViewHolder> {
     }
 
     public static class ViewHolder extends RecyclerView.ViewHolder {
-        ImageView poster = itemView.findViewById(R.id.imageView_itemMain);
-        TextView name = itemView.findViewById(R.id.textView_itemMain_name);
+        ImageView poster = itemView.findViewById(R.id.imageView_itemMovieList_poster);
+        TextView name = itemView.findViewById(R.id.textView_itemMovieList_name);
+        TextView year = itemView.findViewById(R.id.textView_itemMovieList_year);
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
