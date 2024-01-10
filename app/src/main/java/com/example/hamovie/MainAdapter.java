@@ -36,6 +36,13 @@ public class MainAdapter extends RecyclerView.Adapter<MainAdapter.ViewHolder> {
         holder.name.setText(movie.getName());
         Picasso.get().load(movie.getPoster()).into(holder.poster);
 
+
+        holder.itemView.setOnClickListener(view -> {
+            Intent intent = new Intent(holder.name.getContext(), MovieActivity.class);
+            intent.putExtra("EXTRA", movie);
+            holder.name.getContext().startActivity(intent);
+        });
+
     }
 
     @Override
@@ -50,10 +57,6 @@ public class MainAdapter extends RecyclerView.Adapter<MainAdapter.ViewHolder> {
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
 
-            itemView.setOnClickListener(view -> {
-                Intent intent = new Intent(name.getContext(), MovieActivity.class);
-                name.getContext().startActivity(intent);
-            });
         }
     }
 }

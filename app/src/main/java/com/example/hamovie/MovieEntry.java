@@ -1,12 +1,15 @@
 package com.example.hamovie;
 
+import android.os.Parcel;
+import android.os.Parcelable;
+
 import androidx.room.ColumnInfo;
 import androidx.room.Entity;
 import androidx.room.Ignore;
 import androidx.room.PrimaryKey;
 
 @Entity(tableName = "movie")
-public class MovieEntry {
+public class MovieEntry implements Parcelable {
 
     @PrimaryKey(autoGenerate = true)
     @ColumnInfo(name = "id")
@@ -92,4 +95,49 @@ public class MovieEntry {
     public void setPoster(int poster) {
         this.poster = poster;
     }
+
+    @Override
+    public int describeContents() {
+        return 0;
+    }
+
+    @Override
+    public void writeToParcel(Parcel dest, int flags) {
+        dest.writeInt(this.id);
+        dest.writeString(this.name);
+        dest.writeString(this.genre);
+        dest.writeInt(this.year);
+        dest.writeString(this.explain);
+        dest.writeInt(this.poster);
+    }
+
+    public void readFromParcel(Parcel source) {
+        this.id = source.readInt();
+        this.name = source.readString();
+        this.genre = source.readString();
+        this.year = source.readInt();
+        this.explain = source.readString();
+        this.poster = source.readInt();
+    }
+
+    protected MovieEntry(Parcel in) {
+        this.id = in.readInt();
+        this.name = in.readString();
+        this.genre = in.readString();
+        this.year = in.readInt();
+        this.explain = in.readString();
+        this.poster = in.readInt();
+    }
+
+    public static final Parcelable.Creator<MovieEntry> CREATOR = new Parcelable.Creator<MovieEntry>() {
+        @Override
+        public MovieEntry createFromParcel(Parcel source) {
+            return new MovieEntry(source);
+        }
+
+        @Override
+        public MovieEntry[] newArray(int size) {
+            return new MovieEntry[size];
+        }
+    };
 }
