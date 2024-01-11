@@ -17,6 +17,7 @@ public class MovieActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_movie);
         MovieEntry movie = getIntent().getParcelableExtra("EXTRA");
+        getSupportActionBar().setTitle("مشخصات");
 
         Button back = findViewById(R.id.button_movie_back);
         ImageView poster = findViewById(R.id.imageView_movie_poster);

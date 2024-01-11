@@ -141,7 +141,7 @@ public class MainActivity extends AppCompatActivity {
         getMenuInflater().inflate(R.menu.main_menu, menu);
         return super.onCreateOptionsMenu(menu);
     }
-
+    
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         AppExecutors.getsInstance().diskIO().execute(() -> {
@@ -150,71 +150,78 @@ public class MainActivity extends AppCompatActivity {
             if (item.getItemId() == R.id.item_allMovies) {
                 List<MovieEntry> movieList = database.movieDao().getAllMovies();
                 intent.putParcelableArrayListExtra("EXTRA", (ArrayList<? extends Parcelable>) movieList);
+                intent.putExtra("EXTRA2", "همه فیلم ها");
                 startActivity(intent);
             }
 
             if (item.getItemId() == R.id.item_sort_group_year) {
                 List<MovieEntry> movieList = database.movieDao().getAllMoviesOrderByYear();
                 intent.putParcelableArrayListExtra("EXTRA", (ArrayList<? extends Parcelable>) movieList);
+                intent.putExtra("EXTRA2", "سال انتشار");
                 startActivity(intent);
             }
 
             if (item.getItemId() == R.id.item_sort_group_action) {
                 List<MovieEntry> movieList = database.movieDao().getActions();
                 intent.putParcelableArrayListExtra("EXTRA", (ArrayList<? extends Parcelable>) movieList);
+                intent.putExtra("EXTRA2", "اکشن");
                 startActivity(intent);
             }
 
             if (item.getItemId() == R.id.item_sort_group_comedy) {
                 List<MovieEntry> movieList = database.movieDao().getComedies();
                 intent.putParcelableArrayListExtra("EXTRA", (ArrayList<? extends Parcelable>) movieList);
+                intent.putExtra("EXTRA2", "کمدی");
                 startActivity(intent);
             }
 
             if (item.getItemId() == R.id.item_sort_group_crime) {
                 List<MovieEntry> movieList = database.movieDao().getCrimes();
                 intent.putParcelableArrayListExtra("EXTRA", (ArrayList<? extends Parcelable>) movieList);
+                intent.putExtra("EXTRA2", "جنایی");
                 startActivity(intent);
             }
 
             if (item.getItemId() == R.id.item_sort_group_horror) {
                 List<MovieEntry> movieList = database.movieDao().getHorrors();
                 intent.putParcelableArrayListExtra("EXTRA", (ArrayList<? extends Parcelable>) movieList);
+                intent.putExtra("EXTRA2", "ترسناک");
                 startActivity(intent);
             }
 
             if (item.getItemId() == R.id.item_sort_group_romance) {
                 List<MovieEntry> movieList = database.movieDao().getRomances();
                 intent.putParcelableArrayListExtra("EXTRA", (ArrayList<? extends Parcelable>) movieList);
+                intent.putExtra("EXTRA2", "عاشقانه");
                 startActivity(intent);
             }
 
             if (item.getItemId() == R.id.item_sort_group_scifi) {
                 List<MovieEntry> movieList = database.movieDao().getSciFis();
                 intent.putParcelableArrayListExtra("EXTRA", (ArrayList<? extends Parcelable>) movieList);
+                intent.putExtra("EXTRA2", "علمی تخیلی");
                 startActivity(intent);
             }
 
             if (item.getItemId() == R.id.item_sort_group_war) {
                 List<MovieEntry> movieList = database.movieDao().getWars();
                 intent.putParcelableArrayListExtra("EXTRA", (ArrayList<? extends Parcelable>) movieList);
+                intent.putExtra("EXTRA2", "جنگی");
                 startActivity(intent);
             }
 
             if (item.getItemId() == R.id.item_sort_group_serial) {
                 List<MovieEntry> movieList = database.movieDao().getSerials();
                 intent.putParcelableArrayListExtra("EXTRA", (ArrayList<? extends Parcelable>) movieList);
+                intent.putExtra("EXTRA2", "سریال");
                 startActivity(intent);
             }
 
             if (item.getItemId() == R.id.item_sort_group_animation) {
                 List<MovieEntry> movieList = database.movieDao().getAnimations();
                 intent.putParcelableArrayListExtra("EXTRA", (ArrayList<? extends Parcelable>) movieList);
+                intent.putExtra("EXTRA2", "انیمیشن");
                 startActivity(intent);
-
-            }
-
-            if (item.getItemId() == R.id.item_about) {
             }
 
             if (item.getItemId() == R.id.item_user) {

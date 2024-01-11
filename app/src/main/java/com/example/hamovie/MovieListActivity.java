@@ -1,7 +1,6 @@
 package com.example.hamovie;
 
 import android.os.Bundle;
-import android.util.Log;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -21,8 +20,17 @@ public class MovieListActivity extends AppCompatActivity {
         setContentView(R.layout.activity_movie_list);
         recyclerView = findViewById(R.id.recyclerView_movieList);
         getMovieList();
+        setActionBarTitle();
         prepareRecyclerView();
     }
+
+
+
+    private void setActionBarTitle() {
+        String title = getIntent().getStringExtra("EXTRA2");
+        getSupportActionBar().setTitle(title);
+    }
+
 
     private void prepareRecyclerView() {
         adapter = new MovieListAdapter(movieList);

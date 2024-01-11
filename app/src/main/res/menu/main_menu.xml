@@ -4,12 +4,12 @@
     <item android:id="@+id/item_sort" android:title="نمایش به ترتیب">
         <menu >
             <group android:id="@+id/item_sort_group">
-                <item android:id="@+id/item_sort_group_year" android:title="سال تولید" />
+                <item android:id="@+id/item_sort_group_year" android:title="سال انتشار" />
                 <item android:id="@+id/item_sort_group_action" android:title="اکشن" />
                 <item android:id="@+id/item_sort_group_comedy" android:title="کمدی" />
                 <item android:id="@+id/item_sort_group_crime" android:title="جنایی" />
                 <item android:id="@+id/item_sort_group_horror" android:title="ترسناک" />
-                <item android:id="@+id/item_sort_group_romance" android:title="عاشفانه" />
+                <item android:id="@+id/item_sort_group_romance" android:title="عاشقانه" />
                 <item android:id="@+id/item_sort_group_scifi" android:title="علمی تخیلی" />
                 <item android:id="@+id/item_sort_group_war" android:title="جنگی" />
                 <item android:id="@+id/item_sort_group_serial" android:title="سریال" />
@@ -17,6 +17,5 @@
             </group>
         </menu>
     </item>
-    <item android:id="@+id/item_about" android:title="درباره"/>
     <item android:id="@+id/item_user" android:title="خروج از حساب کاربری"/>
 </menu>
