@@ -3,6 +3,8 @@ package com.example.hamovie;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -27,6 +29,9 @@ public class MovieActivity extends AppCompatActivity {
         TextView explain = findViewById(R.id.textView_movie_explain);
 
         Picasso.get().load(movie.getPoster()).into(poster);
+        Animation logoAnimation = AnimationUtils.loadAnimation(this,R.anim.slide_from_bottom);
+        poster.startAnimation(logoAnimation);
+
         name.setText(String.format("%s %s", "نام فیلم :", movie.getName()));
         genre.setText(String.format("%s %s", "ژانر :", movie.getGenre()));
         year.setText(String.format("%s %s", "سال انتشار :", movie.getYear()));
