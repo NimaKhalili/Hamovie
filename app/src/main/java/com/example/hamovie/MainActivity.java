@@ -6,10 +6,12 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.os.Parcelable;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -217,8 +219,17 @@ public class MainActivity extends AppCompatActivity {
             }
 
             if (item.getItemId() == R.id.item_user) {
+                //reset user state
+                SharedPreferences sharedPreferences =
+                        getApplicationContext().getSharedPreferences("USER_DATA", MODE_PRIVATE);
+                SharedPreferences.Editor editor = sharedPreferences.edit();
+                editor.putBoolean("USER_STATE", false);
+                editor.apply();
+                //return to login activity
+                Intent signOutIntent = new Intent(this, LoginActivity.class);
+                startActivity(signOutIntent);
+                finish();
             }
-
         });
 
         return super.onOptionsItemSelected(item);
