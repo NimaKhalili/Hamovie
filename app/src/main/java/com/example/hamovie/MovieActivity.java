@@ -27,9 +27,9 @@ public class MovieActivity extends AppCompatActivity {
         TextView explain = findViewById(R.id.textView_movie_explain);
 
         Picasso.get().load(movie.getPoster()).into(poster);
-        name.setText(movie.getName());
-        genre.setText(movie.getGenre());
-        year.setText(String.valueOf(movie.getYear()));
+        name.setText(String.format("%s %s", "نام فیلم :", movie.getName()));
+        genre.setText(String.format("%s %s", "ژانر :", movie.getGenre()));
+        year.setText(String.format("%s %s", "سال انتشار :", movie.getYear()));
         explain.setText(movie.getExplain());
     }
 

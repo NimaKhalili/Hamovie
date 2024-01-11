@@ -33,8 +33,8 @@ public class MovieListAdapter extends RecyclerView.Adapter<MovieListAdapter.View
     @Override
     public void onBindViewHolder(@NonNull MovieListAdapter.ViewHolder holder, int position) {
         MovieEntry movie = movieList.get(position);
-        holder.name.setText(movie.getName());
-        holder.year.setText(String.valueOf(movie.getYear()));
+        holder.name.setText(String.format("%s %s", "نام فیلم :", movie.getName()));
+        holder.year.setText(String.format("%s %s", "سال انتشار :", movie.getYear()));
         Picasso.get().load(movie.getPoster()).into(holder.poster);
 
         holder.itemView.setOnClickListener(view -> {

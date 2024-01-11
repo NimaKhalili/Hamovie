@@ -31,10 +31,9 @@
                 android:id="@+id/textView_movie_name"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:lines="1"
+                android:maxLines="2"
                 android:text="فیلم "
-                android:textStyle="bold"
-                android:textSize="19sp" />
+                android:textSize="18sp" />
 
             <TextView
                 android:id="@+id/textView_movie_genre"
@@ -42,8 +41,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
                 android:text="ژانر"
-                android:textStyle="bold"
-                android:textSize="19sp" />
+                android:textSize="18sp" />
 
             <TextView
                 android:id="@+id/textView_movie_year"
@@ -51,8 +49,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
                 android:text="2023"
-                android:textStyle="bold"
-                android:textSize="19sp" />
+                android:textSize="18sp" />
 
         </LinearLayout>
 
