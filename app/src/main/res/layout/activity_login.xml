@@ -33,6 +33,7 @@
         android:background="@drawable/background_login_et"
         android:gravity="right|center_vertical"
         android:hint="نام کاربری"
+        android:inputType="textPersonName"
         android:minHeight="48dp"
         android:paddingStart="16dp"
         android:paddingEnd="16dp"

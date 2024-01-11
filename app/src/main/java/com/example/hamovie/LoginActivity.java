@@ -1,19 +1,23 @@
 package com.example.hamovie;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.splashscreen.SplashScreen;
 
+import android.animation.Animator;
+import android.animation.AnimatorListenerAdapter;
+import android.animation.ObjectAnimator;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.os.Build;
 import android.os.Bundle;
+import android.os.Handler;
 import android.view.View;
+import android.view.animation.AnticipateInterpolator;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import com.google.android.material.snackbar.Snackbar;
-
 public class LoginActivity extends AppCompatActivity {
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -40,6 +44,36 @@ public class LoginActivity extends AppCompatActivity {
                 Toast.makeText(this, "لطفا تمام گزینه ها را پر کنید", Toast.LENGTH_SHORT).show();
             }
         });
+
+        prepareAnime();
+    }
+
+    private void prepareAnime() {
+        // Add a callback that's called when the splash screen is animating to the
+        // app content.
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) {
+            getSplashScreen().setOnExitAnimationListener(splashScreenView -> {
+                final ObjectAnimator slideUp = ObjectAnimator.ofFloat(
+                        splashScreenView,
+                        View.TRANSLATION_Y,
+                        0f,
+                        -splashScreenView.getHeight()
+                );
+                slideUp.setInterpolator(new AnticipateInterpolator());
+                slideUp.setDuration(2000L);
+
+                // Call SplashScreenView.remove at the end of your custom animation.
+                slideUp.addListener(new AnimatorListenerAdapter() {
+                    @Override
+                    public void onAnimationEnd(Animator animation) {
+                        splashScreenView.remove();
+                    }
+                });
+
+                // Run your animation.
+                slideUp.start();
+            });
+        }
     }
 
     private void login() {
@@ -62,5 +96,15 @@ public class LoginActivity extends AppCompatActivity {
                 getApplicationContext().getSharedPreferences("USER_DATA", MODE_PRIVATE);
         boolean getUserState = sharedPreferences.getBoolean("USER_STATE", false);
         return getUserState;
+    }
+
+    @Override
+    protected void onResume() {
+        int currentApiVersion = android.os.Build.VERSION.SDK_INT;
+        if (currentApiVersion >= android.os.Build.VERSION_CODES.S) //public static final S = 31 //Android 12
+        {
+            getSplashScreen().setSplashScreenTheme(R.style.Theme_App_Starting);
+        }
+        super.onResume();
     }
 }

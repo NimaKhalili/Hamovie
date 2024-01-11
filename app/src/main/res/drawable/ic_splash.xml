@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<inset xmlns:android="http://schemas.android.com/apk/res/android"
+    android:drawable="@drawable/ic_menu"
+    android:insetLeft="83dp"
+    android:insetRight="83dp"
+    android:insetTop="83dp"
+    android:insetBottom="83dp"/>
