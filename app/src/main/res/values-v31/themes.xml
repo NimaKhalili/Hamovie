@@ -2,9 +2,9 @@
 <resources>
 
     <style name="Theme.App.Starting" parent="Theme.SplashScreen">
-        <item name="windowSplashScreenBackground">@color/blue</item>
+        <item name="windowSplashScreenBackground">@color/white</item>
+        <item name="android:windowSplashScreenIconBackgroundColor">@color/white</item>
         <item name="postSplashScreenTheme">@android:style/Theme.Material.Light.NoActionBar</item>
-        <item name="windowSplashScreenAnimatedIcon">@drawable/test</item>
-        <item name="android:windowSplashScreenAnimationDuration">5</item>
+<!--        <item name="android:windowSplashScreenAnimatedIcon">@drawable/ic_camera</item>-->
     </style>
 </resources>

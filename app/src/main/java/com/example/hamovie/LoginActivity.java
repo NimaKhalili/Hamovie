@@ -18,8 +18,12 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 public class LoginActivity extends AppCompatActivity {
+    private boolean keep = true;
+    private final int DELAY = 1250;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        SplashScreen splashScreen = SplashScreen.installSplashScreen(this);
         super.onCreate(savedInstanceState);
         //Do not run activity if the user is registered
         if (checkUserData())
@@ -44,37 +48,19 @@ public class LoginActivity extends AppCompatActivity {
                 Toast.makeText(this, "لطفا تمام گزینه ها را پر کنید", Toast.LENGTH_SHORT).show();
             }
         });
-
-        prepareAnime();
+        //Keep returning false to Should Keep On Screen until ready to begin.
+        splashScreen.setKeepOnScreenCondition(() -> keep);
+        Handler handler = new Handler();
+        handler.postDelayed(runner, DELAY);
     }
 
-    private void prepareAnime() {
-        // Add a callback that's called when the splash screen is animating to the
-        // app content.
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) {
-            getSplashScreen().setOnExitAnimationListener(splashScreenView -> {
-                final ObjectAnimator slideUp = ObjectAnimator.ofFloat(
-                        splashScreenView,
-                        View.TRANSLATION_Y,
-                        0f,
-                        -splashScreenView.getHeight()
-                );
-                slideUp.setInterpolator(new AnticipateInterpolator());
-                slideUp.setDuration(2000L);
-
-                // Call SplashScreenView.remove at the end of your custom animation.
-                slideUp.addListener(new AnimatorListenerAdapter() {
-                    @Override
-                    public void onAnimationEnd(Animator animation) {
-                        splashScreenView.remove();
-                    }
-                });
-
-                // Run your animation.
-                slideUp.start();
-            });
+    /**Will cause a second process to run on the main thread**/
+    private final Runnable runner = new Runnable() {
+        @Override
+        public void run() {
+            keep = false;
         }
-    }
+    };
 
     private void login() {
         Intent intent = new Intent(this, MainActivity.class);
