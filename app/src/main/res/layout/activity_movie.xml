@@ -11,44 +11,18 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal">
 
-        <TextView
-            android:id="@+id/textView_movie_title"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="4"
-            android:textAlignment="textStart"
-            android:layout_marginStart="10dp"
-            android:textAppearance="?textAppearanceBody1"
-            style="@style/Widget.MaterialComponents.Button.TextButton"
-            android:text="مشخصات"/>
-
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/button_movie_back"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:layout_gravity="end|center_vertical"
-            android:textAppearance="?textAppearanceBody1"
-            style="@style/Widget.MaterialComponents.Button.TextButton"
-            android:text="بازگشت"/>
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-
         <ImageView
             android:id="@+id/imageView_movie_poster"
             android:layout_width="180dp"
             android:layout_height="250dp"
-            android:layout_margin="20dp"
-            tools:background="@color/blue" />
+            android:layout_margin="6dp"
+            tools:background="@color/blue"
+            android:scaleType="centerCrop"/>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="30dp"
+            android:layout_marginTop="6dp"
             android:orientation="vertical"
             android:layout_marginEnd="20dp">
 
@@ -59,7 +33,8 @@
                 android:layout_height="wrap_content"
                 android:lines="1"
                 android:text="فیلم "
-                android:textSize="21sp" />
+                android:textStyle="bold"
+                android:textSize="19sp" />
 
             <TextView
                 android:id="@+id/textView_movie_genre"
@@ -67,7 +42,8 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
                 android:text="ژانر"
-                android:textSize="21sp" />
+                android:textStyle="bold"
+                android:textSize="19sp" />
 
             <TextView
                 android:id="@+id/textView_movie_year"
@@ -75,7 +51,8 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
                 android:text="2023"
-                android:textSize="21sp" />
+                android:textStyle="bold"
+                android:textSize="19sp" />
 
         </LinearLayout>
 
@@ -85,10 +62,11 @@
         android:id="@+id/textView_movie_explain"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="توضیحات"
-        android:layout_marginStart="30dp"
-        android:layout_marginEnd="30dp"
-        android:layout_marginBottom="20dp"
-        android:textSize="21sp"/>
+        android:justificationMode="inter_word"
+        android:layout_marginTop="7dp"
+        android:layout_marginStart="7dp"
+        android:layout_marginEnd="7dp"
+        android:layout_marginBottom="7dp"
+        android:textSize="18sp"/>
 
 </LinearLayout>

@@ -1,8 +1,6 @@
 package com.example.hamovie;
 
 import android.os.Bundle;
-import android.view.View;
-import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -19,7 +17,6 @@ public class MovieActivity extends AppCompatActivity {
         MovieEntry movie = getIntent().getParcelableExtra("EXTRA");
         getSupportActionBar().setTitle("مشخصات");
 
-        Button back = findViewById(R.id.button_movie_back);
         ImageView poster = findViewById(R.id.imageView_movie_poster);
         TextView name = findViewById(R.id.textView_movie_name);
         TextView genre = findViewById(R.id.textView_movie_genre);
@@ -31,9 +28,5 @@ public class MovieActivity extends AppCompatActivity {
         genre.setText(movie.getGenre());
         year.setText(String.valueOf(movie.getYear()));
         explain.setText(movie.getExplain());
-
-        back.setOnClickListener(view -> {
-            finish();
-        });
     }
 }

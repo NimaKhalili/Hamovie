@@ -25,21 +25,23 @@ public class MovieListActivity extends AppCompatActivity {
     }
 
 
-
     private void setActionBarTitle() {
         String title = getIntent().getStringExtra("EXTRA2");
-        getSupportActionBar().setTitle(title);
+        if (title != null)
+            getSupportActionBar().setTitle(title);
+        else
+            getSupportActionBar().setTitle(movieList.get(0).getGenre());
     }
 
 
     private void prepareRecyclerView() {
         adapter = new MovieListAdapter(movieList);
-        recyclerView.setLayoutManager(new LinearLayoutManager(this,LinearLayoutManager.VERTICAL, false));
+        recyclerView.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false));
         recyclerView.setAdapter(adapter);
     }
 
     private void getMovieList() {
-        movieList =  (ArrayList<MovieEntry>)getIntent().getSerializableExtra("EXTRA");
+        movieList = (ArrayList<MovieEntry>) getIntent().getSerializableExtra("EXTRA");
     }
 
 }

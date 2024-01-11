@@ -16,36 +16,36 @@ public interface MovieDao {
     @Insert
     void insertAllMovies(List<MovieEntry> movieList);
 
-    @Query("SELECT * FROM movie WHERE genre != 'serial' and genre != 'animation'")
+    @Query("SELECT * FROM movie WHERE genre != 'سریال' and genre != 'انیمیشن'")
     List<MovieEntry> getFilms();
 
-    @Query("SELECT * FROM movie WHERE genre = 'serial'")
+    @Query("SELECT * FROM movie WHERE genre = 'سریال'")
     List<MovieEntry> getSerials();
 
-    @Query("SELECT * FROM movie WHERE genre = 'animation'")
+    @Query("SELECT * FROM movie WHERE genre = 'انیمیشن'")
     List<MovieEntry> getAnimations();
 
     @Query("SELECT * FROM movie ORDER BY year DESC")
     List<MovieEntry> getAllMoviesOrderByYear();
 
-    @Query("SELECT * FROM movie WHERE genre = 'action'")
+    @Query("SELECT * FROM movie WHERE genre = 'اکشن'")
     List<MovieEntry> getActions();
 
-    @Query("SELECT * FROM movie WHERE genre = 'comedy'")
+    @Query("SELECT * FROM movie WHERE genre = 'کمدی'")
     List<MovieEntry> getComedies();
 
-    @Query("SELECT * FROM movie WHERE genre = 'crime'")
+    @Query("SELECT * FROM movie WHERE genre = 'جنایی'")
     List<MovieEntry> getCrimes();
 
-    @Query("SELECT * FROM movie WHERE genre = 'horror'")
+    @Query("SELECT * FROM movie WHERE genre = 'ترسناک'")
     List<MovieEntry> getHorrors();
 
-    @Query("SELECT * FROM movie WHERE genre = 'romance'")
+    @Query("SELECT * FROM movie WHERE genre = 'عاشقانه'")
     List<MovieEntry> getRomances();
 
-    @Query("SELECT * FROM movie WHERE genre = 'sci-fi'")
+    @Query("SELECT * FROM movie WHERE genre = 'علمی تخیلی'")
     List<MovieEntry> getSciFis();
 
-    @Query("SELECT * FROM movie WHERE genre = 'war'")
+    @Query("SELECT * FROM movie WHERE genre = 'جنگی'")
     List<MovieEntry> getWars();
 }
