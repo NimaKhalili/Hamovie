@@ -64,7 +64,7 @@
         android:layout_marginTop="36dp"
         android:gravity="center"
         android:minHeight="48dp"
-        android:padding="10dp"
+        android:padding="15dp"
         android:text="ورود"
         android:textSize="20sp" />
 
