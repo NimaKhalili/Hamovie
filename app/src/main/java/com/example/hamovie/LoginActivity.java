@@ -34,7 +34,7 @@ public class LoginActivity extends AppCompatActivity {
 
         login.setOnClickListener(view -> {
             if (!username.getText().toString().isEmpty() || !password.getText().toString().isEmpty()) {
-                if (username.getText().toString().trim().equals("admin") && password.getText().toString().trim().equals("12345")) {
+                if (username.getText().toString().trim().equals("user") && password.getText().toString().trim().equals("12345")) {
                     saveUserData();
                     login();
                 } else {

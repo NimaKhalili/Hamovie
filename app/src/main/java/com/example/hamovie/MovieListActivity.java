@@ -1,7 +1,10 @@
 package com.example.hamovie;
 
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -44,4 +47,16 @@ public class MovieListActivity extends AppCompatActivity {
         movieList = (ArrayList<MovieEntry>) getIntent().getSerializableExtra("EXTRA");
     }
 
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.back_menu, menu);
+        return super.onCreateOptionsMenu(menu);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        if (item.getItemId() == R.id.item_back)
+            finish();
+        return super.onOptionsItemSelected(item);
+    }
 }
