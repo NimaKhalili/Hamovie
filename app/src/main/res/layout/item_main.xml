@@ -4,22 +4,23 @@
     android:layout_height="wrap_content"
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
-    android:padding="16dp">
+    android:padding="3dp">
 
     <ImageView
         android:id="@+id/imageView_itemMain"
-        android:layout_width="100dp"
-        android:layout_height="135dp"
+        android:layout_width="130dp"
+        android:layout_height="185dp"
         tools:background="@color/blue"
-        android:scaleType="fitXY"
+        android:scaleType="centerCrop"
         />
 
     <TextView
         android:id="@+id/textView_itemMain_name"
-        android:layout_width="wrap_content"
+        android:layout_width="100dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="8dp"
+        android:maxLines="2"
         android:text="فیلم"
-        android:textSize="18sp" />
+        android:textSize="13sp" />
 
 </LinearLayout>
