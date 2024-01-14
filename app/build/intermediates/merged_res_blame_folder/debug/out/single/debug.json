@@ -1,0 +1,334 @@
+[
+    {
+        "merged": "C:\\Users\\khali\\.gradle\\daemon\\8.2\\com.example.hamovie.app-merged_res-4:\\drawable_background_login_et.xml.flat",
+        "source": "C:\\Users\\khali\\.gradle\\daemon\\8.2\\com.example.hamovie.app-main-6:\\drawable\\background_login_et.xml"
+    },
+    {
+        "merged": "C:\\Users\\khali\\.gradle\\daemon\\8.2\\com.example.hamovie.app-merged_res-4:\\drawable_serial4.png.flat",
+        "source": "C:\\Users\\khali\\.gradle\\daemon\\8.2\\com.example.hamovie.app-main-6:\\drawable\\serial4.png"
+    },
+    {
+        "merged": "C:\\Users\\khali\\.gradle\\daemon\\8.2\\com.example.hamovie.app-merged_res-4:\\mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\khali\\.gradle\\daemon\\8.2\\com.example.hamovie.app-main-6:\\mipmap-hdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\khali\\.gradle\\daemon\\8.2\\com.example.hamovie.app-merged_res-4:\\drawable_test.webp.flat",
+        "source": "C:\\Users\\khali\\.gradle\\daemon\\8.2\\com.example.hamovie.app-main-6:\\drawable\\test.webp"
+    },
+    {
+        "merged": "C:\\Users\\khali\\.gradle\\daemon\\8.2\\com.example.hamovie.app-merged_res-4:\\drawable_war4.png.flat",
+        "source": "C:\\Users\\khali\\.gradle\\daemon\\8.2\\com.example.hamovie.app-main-6:\\drawable\\war4.png"
+    },
+    {
+        "merged": "C:\\Users\\khali\\.gradle\\daemon\\8.2\\com.example.hamovie.app-merged_res-4:\\drawable_horror4.png.flat",
+        "source": "C:\\Users\\khali\\.gradle\\daemon\\8.2\\com.example.hamovie.app-main-6:\\drawable\\horror4.png"
+    },
+    {
+        "merged": "C:\\Users\\khali\\.gradle\\daemon\\8.2\\com.example.hamovie.app-merged_res-4:\\font_primary_extra_bold.ttf.flat",
+        "source": "C:\\Users\\khali\\.gradle\\daemon\\8.2\\com.example.hamovie.app-main-6:\\font\\primary_extra_bold.ttf"
+    },
+    {
+        "merged": "C:\\Users\\khali\\.gradle\\daemon\\8.2\\com.example.hamovie.app-merged_res-4:\\layout_activity_movie_list.xml.flat",
+        "source": "C:\\Users\\khali\\.gradle\\daemon\\8.2\\com.example.hamovie.app-main-6:\\layout\\activity_movie_list.xml"
+    },
+    {
+        "merged": "C:\\Users\\khali\\.gradle\\daemon\\8.2\\com.example.hamovie.app-merged_res-4:\\drawable_romance3.png.flat",
+        "source": "C:\\Users\\khali\\.gradle\\daemon\\8.2\\com.example.hamovie.app-main-6:\\drawable\\romance3.png"
+    },
+    {
+        "merged": "C:\\Users\\khali\\.gradle\\daemon\\8.2\\com.example.hamovie.app-merged_res-4:\\drawable_comedy3.png.flat",
+        "source": "C:\\Users\\khali\\.gradle\\daemon\\8.2\\com.example.hamovie.app-main-6:\\drawable\\comedy3.png"
+    },
+    {
+        "merged": "C:\\Users\\khali\\.gradle\\daemon\\8.2\\com.example.hamovie.app-merged_res-4:\\anim_slide_from_left.xml.flat",
+        "source": "C:\\Users\\khali\\.gradle\\daemon\\8.2\\com.example.hamovie.app-main-6:\\anim\\slide_from_left.xml"
+    },
+    {
+        "merged": "C:\\Users\\khali\\.gradle\\daemon\\8.2\\com.example.hamovie.app-merged_res-4:\\drawable_horror1.png.flat",
+        "source": "C:\\Users\\khali\\.gradle\\daemon\\8.2\\com.example.hamovie.app-main-6:\\drawable\\horror1.png"
+    },
+    {
+        "merged": "C:\\Users\\khali\\.gradle\\daemon\\8.2\\com.example.hamovie.app-merged_res-4:\\drawable_crime2.png.flat",
+        "source": "C:\\Users\\khali\\.gradle\\daemon\\8.2\\com.example.hamovie.app-main-6:\\drawable\\crime2.png"
+    },
+    {
+        "merged": "C:\\Users\\khali\\.gradle\\daemon\\8.2\\com.example.hamovie.app-merged_res-4:\\xml_backup_rules.xml.flat",
+        "source": "C:\\Users\\khali\\.gradle\\daemon\\8.2\\com.example.hamovie.app-main-6:\\xml\\backup_rules.xml"
+    },
+    {
+        "merged": "C:\\Users\\khali\\.gradle\\daemon\\8.2\\com.example.hamovie.app-merged_res-4:\\drawable_scifi3.png.flat",
+        "source": "C:\\Users\\khali\\.gradle\\daemon\\8.2\\com.example.hamovie.app-main-6:\\drawable\\scifi3.png"
+    },
+    {
+        "merged": "C:\\Users\\khali\\.gradle\\daemon\\8.2\\com.example.hamovie.app-merged_res-4:\\layout_activity_main.xml.flat",
+        "source": "C:\\Users\\khali\\.gradle\\daemon\\8.2\\com.example.hamovie.app-main-6:\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\khali\\.gradle\\daemon\\8.2\\com.example.hamovie.app-merged_res-4:\\drawable_animation3.png.flat",
+        "source": "C:\\Users\\khali\\.gradle\\daemon\\8.2\\com.example.hamovie.app-main-6:\\drawable\\animation3.png"
+    },
+    {
+        "merged": "C:\\Users\\khali\\.gradle\\daemon\\8.2\\com.example.hamovie.app-merged_res-4:\\layout_item_movie_list.xml.flat",
+        "source": "C:\\Users\\khali\\.gradle\\daemon\\8.2\\com.example.hamovie.app-main-6:\\layout\\item_movie_list.xml"
+    },
+    {
+        "merged": "C:\\Users\\khali\\.gradle\\daemon\\8.2\\com.example.hamovie.app-merged_res-4:\\drawable_crime5.png.flat",
+        "source": "C:\\Users\\khali\\.gradle\\daemon\\8.2\\com.example.hamovie.app-main-6:\\drawable\\crime5.png"
+    },
+    {
+        "merged": "C:\\Users\\khali\\.gradle\\daemon\\8.2\\com.example.hamovie.app-merged_res-4:\\drawable_romance2.png.flat",
+        "source": "C:\\Users\\khali\\.gradle\\daemon\\8.2\\com.example.hamovie.app-main-6:\\drawable\\romance2.png"
+    },
+    {
+        "merged": "C:\\Users\\khali\\.gradle\\daemon\\8.2\\com.example.hamovie.app-merged_res-4:\\drawable_war3.png.flat",
+        "source": "C:\\Users\\khali\\.gradle\\daemon\\8.2\\com.example.hamovie.app-main-6:\\drawable\\war3.png"
+    },
+    {
+        "merged": "C:\\Users\\khali\\.gradle\\daemon\\8.2\\com.example.hamovie.app-merged_res-4:\\drawable_animation1.png.flat",
+        "source": "C:\\Users\\khali\\.gradle\\daemon\\8.2\\com.example.hamovie.app-main-6:\\drawable\\animation1.png"
+    },
+    {
+        "merged": "C:\\Users\\khali\\.gradle\\daemon\\8.2\\com.example.hamovie.app-merged_res-4:\\drawable_horror5.png.flat",
+        "source": "C:\\Users\\khali\\.gradle\\daemon\\8.2\\com.example.hamovie.app-main-6:\\drawable\\horror5.png"
+    },
+    {
+        "merged": "C:\\Users\\khali\\.gradle\\daemon\\8.2\\com.example.hamovie.app-merged_res-4:\\drawable_comedy2.png.flat",
+        "source": "C:\\Users\\khali\\.gradle\\daemon\\8.2\\com.example.hamovie.app-main-6:\\drawable\\comedy2.png"
+    },
+    {
+        "merged": "C:\\Users\\khali\\.gradle\\daemon\\8.2\\com.example.hamovie.app-merged_res-4:\\drawable_action2.png.flat",
+        "source": "C:\\Users\\khali\\.gradle\\daemon\\8.2\\com.example.hamovie.app-main-6:\\drawable\\action2.png"
+    },
+    {
+        "merged": "C:\\Users\\khali\\.gradle\\daemon\\8.2\\com.example.hamovie.app-merged_res-4:\\drawable_serial3.png.flat",
+        "source": "C:\\Users\\khali\\.gradle\\daemon\\8.2\\com.example.hamovie.app-main-6:\\drawable\\serial3.png"
+    },
+    {
+        "merged": "C:\\Users\\khali\\.gradle\\daemon\\8.2\\com.example.hamovie.app-merged_res-4:\\layout_item_main.xml.flat",
+        "source": "C:\\Users\\khali\\.gradle\\daemon\\8.2\\com.example.hamovie.app-main-6:\\layout\\item_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\khali\\.gradle\\daemon\\8.2\\com.example.hamovie.app-merged_res-4:\\drawable_animation4.png.flat",
+        "source": "C:\\Users\\khali\\.gradle\\daemon\\8.2\\com.example.hamovie.app-main-6:\\drawable\\animation4.png"
+    },
+    {
+        "merged": "C:\\Users\\khali\\.gradle\\daemon\\8.2\\com.example.hamovie.app-merged_res-4:\\drawable_horror2.png.flat",
+        "source": "C:\\Users\\khali\\.gradle\\daemon\\8.2\\com.example.hamovie.app-main-6:\\drawable\\horror2.png"
+    },
+    {
+        "merged": "C:\\Users\\khali\\.gradle\\daemon\\8.2\\com.example.hamovie.app-merged_res-4:\\font_primary_bold.ttf.flat",
+        "source": "C:\\Users\\khali\\.gradle\\daemon\\8.2\\com.example.hamovie.app-main-6:\\font\\primary_bold.ttf"
+    },
+    {
+        "merged": "C:\\Users\\khali\\.gradle\\daemon\\8.2\\com.example.hamovie.app-merged_res-4:\\drawable_crime4.png.flat",
+        "source": "C:\\Users\\khali\\.gradle\\daemon\\8.2\\com.example.hamovie.app-main-6:\\drawable\\crime4.png"
+    },
+    {
+        "merged": "C:\\Users\\khali\\.gradle\\daemon\\8.2\\com.example.hamovie.app-merged_res-4:\\drawable_comedy5.png.flat",
+        "source": "C:\\Users\\khali\\.gradle\\daemon\\8.2\\com.example.hamovie.app-main-6:\\drawable\\comedy5.png"
+    },
+    {
+        "merged": "C:\\Users\\khali\\.gradle\\daemon\\8.2\\com.example.hamovie.app-merged_res-4:\\drawable_crime1.png.flat",
+        "source": "C:\\Users\\khali\\.gradle\\daemon\\8.2\\com.example.hamovie.app-main-6:\\drawable\\crime1.png"
+    },
+    {
+        "merged": "C:\\Users\\khali\\.gradle\\daemon\\8.2\\com.example.hamovie.app-merged_res-4:\\drawable_action5.png.flat",
+        "source": "C:\\Users\\khali\\.gradle\\daemon\\8.2\\com.example.hamovie.app-main-6:\\drawable\\action5.png"
+    },
+    {
+        "merged": "C:\\Users\\khali\\.gradle\\daemon\\8.2\\com.example.hamovie.app-merged_res-4:\\layout_activity_login.xml.flat",
+        "source": "C:\\Users\\khali\\.gradle\\daemon\\8.2\\com.example.hamovie.app-main-6:\\layout\\activity_login.xml"
+    },
+    {
+        "merged": "C:\\Users\\khali\\.gradle\\daemon\\8.2\\com.example.hamovie.app-merged_res-4:\\mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\khali\\.gradle\\daemon\\8.2\\com.example.hamovie.app-main-6:\\mipmap-xhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\khali\\.gradle\\daemon\\8.2\\com.example.hamovie.app-merged_res-4:\\drawable_scifi4.png.flat",
+        "source": "C:\\Users\\khali\\.gradle\\daemon\\8.2\\com.example.hamovie.app-main-6:\\drawable\\scifi4.png"
+    },
+    {
+        "merged": "C:\\Users\\khali\\.gradle\\daemon\\8.2\\com.example.hamovie.app-merged_res-4:\\mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\khali\\.gradle\\daemon\\8.2\\com.example.hamovie.app-main-6:\\mipmap-xhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\khali\\.gradle\\daemon\\8.2\\com.example.hamovie.app-merged_res-4:\\anim_slide_from_top.xml.flat",
+        "source": "C:\\Users\\khali\\.gradle\\daemon\\8.2\\com.example.hamovie.app-main-6:\\anim\\slide_from_top.xml"
+    },
+    {
+        "merged": "C:\\Users\\khali\\.gradle\\daemon\\8.2\\com.example.hamovie.app-merged_res-4:\\layout_activity_movie.xml.flat",
+        "source": "C:\\Users\\khali\\.gradle\\daemon\\8.2\\com.example.hamovie.app-main-6:\\layout\\activity_movie.xml"
+    },
+    {
+        "merged": "C:\\Users\\khali\\.gradle\\daemon\\8.2\\com.example.hamovie.app-merged_res-4:\\font_primary_regular.ttf.flat",
+        "source": "C:\\Users\\khali\\.gradle\\daemon\\8.2\\com.example.hamovie.app-main-6:\\font\\primary_regular.ttf"
+    },
+    {
+        "merged": "C:\\Users\\khali\\.gradle\\daemon\\8.2\\com.example.hamovie.app-merged_res-4:\\drawable_ic_camera.xml.flat",
+        "source": "C:\\Users\\khali\\.gradle\\daemon\\8.2\\com.example.hamovie.app-main-6:\\drawable\\ic_camera.xml"
+    },
+    {
+        "merged": "C:\\Users\\khali\\.gradle\\daemon\\8.2\\com.example.hamovie.app-merged_res-4:\\xml_data_extraction_rules.xml.flat",
+        "source": "C:\\Users\\khali\\.gradle\\daemon\\8.2\\com.example.hamovie.app-main-6:\\xml\\data_extraction_rules.xml"
+    },
+    {
+        "merged": "C:\\Users\\khali\\.gradle\\daemon\\8.2\\com.example.hamovie.app-merged_res-4:\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\khali\\.gradle\\daemon\\8.2\\com.example.hamovie.app-main-6:\\mipmap-xxhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\khali\\.gradle\\daemon\\8.2\\com.example.hamovie.app-merged_res-4:\\mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\khali\\.gradle\\daemon\\8.2\\com.example.hamovie.app-main-6:\\mipmap-xxhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.hamovie.app-merged_res-4:/drawable_test2.webp.flat",
+        "source": "com.example.hamovie.app-main-6:/drawable/test2.webp"
+    },
+    {
+        "merged": "C:\\Users\\khali\\.gradle\\daemon\\8.2\\com.example.hamovie.app-merged_res-4:\\drawable_scifi1.png.flat",
+        "source": "C:\\Users\\khali\\.gradle\\daemon\\8.2\\com.example.hamovie.app-main-6:\\drawable\\scifi1.png"
+    },
+    {
+        "merged": "C:\\Users\\khali\\.gradle\\daemon\\8.2\\com.example.hamovie.app-merged_res-4:\\drawable_serial2.png.flat",
+        "source": "C:\\Users\\khali\\.gradle\\daemon\\8.2\\com.example.hamovie.app-main-6:\\drawable\\serial2.png"
+    },
+    {
+        "merged": "C:\\Users\\khali\\.gradle\\daemon\\8.2\\com.example.hamovie.app-merged_res-4:\\anim_slidedown.xml.flat",
+        "source": "C:\\Users\\khali\\.gradle\\daemon\\8.2\\com.example.hamovie.app-main-6:\\anim\\slidedown.xml"
+    },
+    {
+        "merged": "C:\\Users\\khali\\.gradle\\daemon\\8.2\\com.example.hamovie.app-merged_res-4:\\drawable_action1.png.flat",
+        "source": "C:\\Users\\khali\\.gradle\\daemon\\8.2\\com.example.hamovie.app-main-6:\\drawable\\action1.png"
+    },
+    {
+        "merged": "C:\\Users\\khali\\.gradle\\daemon\\8.2\\com.example.hamovie.app-merged_res-4:\\drawable_background_login.xml.flat",
+        "source": "C:\\Users\\khali\\.gradle\\daemon\\8.2\\com.example.hamovie.app-main-6:\\drawable\\background_login.xml"
+    },
+    {
+        "merged": "C:\\Users\\khali\\.gradle\\daemon\\8.2\\com.example.hamovie.app-merged_res-4:\\mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\khali\\.gradle\\daemon\\8.2\\com.example.hamovie.app-main-6:\\mipmap-mdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\khali\\.gradle\\daemon\\8.2\\com.example.hamovie.app-merged_res-4:\\drawable_war2.png.flat",
+        "source": "C:\\Users\\khali\\.gradle\\daemon\\8.2\\com.example.hamovie.app-main-6:\\drawable\\war2.png"
+    },
+    {
+        "merged": "C:\\Users\\khali\\.gradle\\daemon\\8.2\\com.example.hamovie.app-merged_res-4:\\drawable_action4.png.flat",
+        "source": "C:\\Users\\khali\\.gradle\\daemon\\8.2\\com.example.hamovie.app-main-6:\\drawable\\action4.png"
+    },
+    {
+        "merged": "C:\\Users\\khali\\.gradle\\daemon\\8.2\\com.example.hamovie.app-merged_res-4:\\drawable_crime3.png.flat",
+        "source": "C:\\Users\\khali\\.gradle\\daemon\\8.2\\com.example.hamovie.app-main-6:\\drawable\\crime3.png"
+    },
+    {
+        "merged": "C:\\Users\\khali\\.gradle\\daemon\\8.2\\com.example.hamovie.app-merged_res-4:\\drawable_romance5.png.flat",
+        "source": "C:\\Users\\khali\\.gradle\\daemon\\8.2\\com.example.hamovie.app-main-6:\\drawable\\romance5.png"
+    },
+    {
+        "merged": "C:\\Users\\khali\\.gradle\\daemon\\8.2\\com.example.hamovie.app-merged_res-4:\\menu_main_menu.xml.flat",
+        "source": "C:\\Users\\khali\\.gradle\\daemon\\8.2\\com.example.hamovie.app-main-6:\\menu\\main_menu.xml"
+    },
+    {
+        "merged": "C:\\Users\\khali\\.gradle\\daemon\\8.2\\com.example.hamovie.app-merged_res-4:\\mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\khali\\.gradle\\daemon\\8.2\\com.example.hamovie.app-main-6:\\mipmap-mdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\khali\\.gradle\\daemon\\8.2\\com.example.hamovie.app-merged_res-4:\\anim_fadein.xml.flat",
+        "source": "C:\\Users\\khali\\.gradle\\daemon\\8.2\\com.example.hamovie.app-main-6:\\anim\\fadein.xml"
+    },
+    {
+        "merged": "C:\\Users\\khali\\.gradle\\daemon\\8.2\\com.example.hamovie.app-merged_res-4:\\drawable_war5.png.flat",
+        "source": "C:\\Users\\khali\\.gradle\\daemon\\8.2\\com.example.hamovie.app-main-6:\\drawable\\war5.png"
+    },
+    {
+        "merged": "C:\\Users\\khali\\.gradle\\daemon\\8.2\\com.example.hamovie.app-merged_res-4:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "C:\\Users\\khali\\.gradle\\daemon\\8.2\\com.example.hamovie.app-main-6:\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+    },
+    {
+        "merged": "C:\\Users\\khali\\.gradle\\daemon\\8.2\\com.example.hamovie.app-merged_res-4:\\drawable_comedy1.png.flat",
+        "source": "C:\\Users\\khali\\.gradle\\daemon\\8.2\\com.example.hamovie.app-main-6:\\drawable\\comedy1.png"
+    },
+    {
+        "merged": "C:\\Users\\khali\\.gradle\\daemon\\8.2\\com.example.hamovie.app-merged_res-4:\\anim_rotate.xml.flat",
+        "source": "C:\\Users\\khali\\.gradle\\daemon\\8.2\\com.example.hamovie.app-main-6:\\anim\\rotate.xml"
+    },
+    {
+        "merged": "C:\\Users\\khali\\.gradle\\daemon\\8.2\\com.example.hamovie.app-merged_res-4:\\drawable_horror3.png.flat",
+        "source": "C:\\Users\\khali\\.gradle\\daemon\\8.2\\com.example.hamovie.app-main-6:\\drawable\\horror3.png"
+    },
+    {
+        "merged": "C:\\Users\\khali\\.gradle\\daemon\\8.2\\com.example.hamovie.app-merged_res-4:\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\khali\\.gradle\\daemon\\8.2\\com.example.hamovie.app-main-6:\\mipmap-xxxhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\khali\\.gradle\\daemon\\8.2\\com.example.hamovie.app-merged_res-4:\\drawable_serial5.png.flat",
+        "source": "C:\\Users\\khali\\.gradle\\daemon\\8.2\\com.example.hamovie.app-main-6:\\drawable\\serial5.png"
+    },
+    {
+        "merged": "C:\\Users\\khali\\.gradle\\daemon\\8.2\\com.example.hamovie.app-merged_res-4:\\mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\khali\\.gradle\\daemon\\8.2\\com.example.hamovie.app-main-6:\\mipmap-hdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\khali\\.gradle\\daemon\\8.2\\com.example.hamovie.app-merged_res-4:\\drawable_scifi5.png.flat",
+        "source": "C:\\Users\\khali\\.gradle\\daemon\\8.2\\com.example.hamovie.app-main-6:\\drawable\\scifi5.png"
+    },
+    {
+        "merged": "C:\\Users\\khali\\.gradle\\daemon\\8.2\\com.example.hamovie.app-merged_res-4:\\drawable_romance4.png.flat",
+        "source": "C:\\Users\\khali\\.gradle\\daemon\\8.2\\com.example.hamovie.app-main-6:\\drawable\\romance4.png"
+    },
+    {
+        "merged": "C:\\Users\\khali\\.gradle\\daemon\\8.2\\com.example.hamovie.app-merged_res-4:\\drawable_war1.png.flat",
+        "source": "C:\\Users\\khali\\.gradle\\daemon\\8.2\\com.example.hamovie.app-main-6:\\drawable\\war1.png"
+    },
+    {
+        "merged": "C:\\Users\\khali\\.gradle\\daemon\\8.2\\com.example.hamovie.app-merged_res-4:\\drawable_ic_back.xml.flat",
+        "source": "C:\\Users\\khali\\.gradle\\daemon\\8.2\\com.example.hamovie.app-main-6:\\drawable\\ic_back.xml"
+    },
+    {
+        "merged": "C:\\Users\\khali\\.gradle\\daemon\\8.2\\com.example.hamovie.app-merged_res-4:\\drawable_comedy4.png.flat",
+        "source": "C:\\Users\\khali\\.gradle\\daemon\\8.2\\com.example.hamovie.app-main-6:\\drawable\\comedy4.png"
+    },
+    {
+        "merged": "C:\\Users\\khali\\.gradle\\daemon\\8.2\\com.example.hamovie.app-merged_res-4:\\anim_slide_from_bottom.xml.flat",
+        "source": "C:\\Users\\khali\\.gradle\\daemon\\8.2\\com.example.hamovie.app-main-6:\\anim\\slide_from_bottom.xml"
+    },
+    {
+        "merged": "C:\\Users\\khali\\.gradle\\daemon\\8.2\\com.example.hamovie.app-merged_res-4:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "C:\\Users\\khali\\.gradle\\daemon\\8.2\\com.example.hamovie.app-main-6:\\mipmap-anydpi-v26\\ic_launcher.xml"
+    },
+    {
+        "merged": "C:\\Users\\khali\\.gradle\\daemon\\8.2\\com.example.hamovie.app-merged_res-4:\\drawable_animation5.png.flat",
+        "source": "C:\\Users\\khali\\.gradle\\daemon\\8.2\\com.example.hamovie.app-main-6:\\drawable\\animation5.png"
+    },
+    {
+        "merged": "C:\\Users\\khali\\.gradle\\daemon\\8.2\\com.example.hamovie.app-merged_res-4:\\drawable_serial1.png.flat",
+        "source": "C:\\Users\\khali\\.gradle\\daemon\\8.2\\com.example.hamovie.app-main-6:\\drawable\\serial1.png"
+    },
+    {
+        "merged": "C:\\Users\\khali\\.gradle\\daemon\\8.2\\com.example.hamovie.app-merged_res-4:\\mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\khali\\.gradle\\daemon\\8.2\\com.example.hamovie.app-main-6:\\mipmap-xxxhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\khali\\.gradle\\daemon\\8.2\\com.example.hamovie.app-merged_res-4:\\menu_back_menu.xml.flat",
+        "source": "C:\\Users\\khali\\.gradle\\daemon\\8.2\\com.example.hamovie.app-main-6:\\menu\\back_menu.xml"
+    },
+    {
+        "merged": "C:\\Users\\khali\\.gradle\\daemon\\8.2\\com.example.hamovie.app-merged_res-4:\\drawable_scifi2.png.flat",
+        "source": "C:\\Users\\khali\\.gradle\\daemon\\8.2\\com.example.hamovie.app-main-6:\\drawable\\scifi2.png"
+    },
+    {
+        "merged": "C:\\Users\\khali\\.gradle\\daemon\\8.2\\com.example.hamovie.app-merged_res-4:\\drawable_ic_launcher_foreground.xml.flat",
+        "source": "C:\\Users\\khali\\.gradle\\daemon\\8.2\\com.example.hamovie.app-main-6:\\drawable\\ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "C:\\Users\\khali\\.gradle\\daemon\\8.2\\com.example.hamovie.app-merged_res-4:\\drawable_action3.png.flat",
+        "source": "C:\\Users\\khali\\.gradle\\daemon\\8.2\\com.example.hamovie.app-main-6:\\drawable\\action3.png"
+    },
+    {
+        "merged": "C:\\Users\\khali\\.gradle\\daemon\\8.2\\com.example.hamovie.app-merged_res-4:\\drawable_romance1.png.flat",
+        "source": "C:\\Users\\khali\\.gradle\\daemon\\8.2\\com.example.hamovie.app-main-6:\\drawable\\romance1.png"
+    },
+    {
+        "merged": "C:\\Users\\khali\\.gradle\\daemon\\8.2\\com.example.hamovie.app-merged_res-4:\\drawable_animation2.png.flat",
+        "source": "C:\\Users\\khali\\.gradle\\daemon\\8.2\\com.example.hamovie.app-main-6:\\drawable\\animation2.png"
+    }
+]
